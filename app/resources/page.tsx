@@ -3,7 +3,7 @@
 import Navigation from "@/components/Navigation";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import { motion } from "framer-motion";
-import { ArrowRight, FileText, Video, BookOpen, Download, Calendar, Users, Globe, ExternalLink } from "lucide-react";
+import { ArrowRight, FileText, Video, BookOpen, Download, Calendar, Users, ExternalLink } from "lucide-react";
 import Link from "next/link";
 
 export default function ResourcesPage() {

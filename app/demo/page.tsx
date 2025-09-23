@@ -3,8 +3,9 @@
 import Navigation from "@/components/Navigation";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import { motion } from "framer-motion";
-import { ArrowRight, User, Mail, Building, Phone, MessageSquare, Calendar, CheckCircle, Sparkles } from "lucide-react";
+import { ArrowRight, User, MessageSquare, Calendar, CheckCircle, Sparkles } from "lucide-react";
 import { useState } from "react";
+import Link from "next/link";
 
 export default function DemoPage() {
   const [formData, setFormData] = useState({
@@ -87,12 +88,12 @@ export default function DemoPage() {
                   Solicitar Otra Demo
                 </button>
 
-                <a
+                <Link
                   href="/"
                   className="px-6 py-3 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 transition-all duration-300"
                 >
                   Volver al Inicio
-                </a>
+                </Link>
               </div>
             </div>
           </motion.div>
@@ -461,7 +462,7 @@ export default function DemoPage() {
                       <span key={i} className="text-yellow-400 text-xl">★</span>
                     ))}
                   </div>
-                  <p className="text-gray-700 mb-6 italic">"{testimonial.quote}"</p>
+                  <p className="text-gray-700 mb-6 italic">&ldquo;{testimonial.quote}&rdquo;</p>
                   <div>
                     <div className="font-semibold text-gray-900">{testimonial.author}</div>
                     <div className="text-gray-600">{testimonial.role}</div>

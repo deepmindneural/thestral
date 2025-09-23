@@ -5,7 +5,6 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 import { motion } from "framer-motion";
 import { ArrowRight, Database, Layers, Zap, Shield, Users, Brain, CheckCircle } from "lucide-react";
 import Link from "next/link";
-import Image from "next/image";
 
 export default function FoundryPage() {
   return (

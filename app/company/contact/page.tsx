@@ -5,6 +5,7 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 import { motion } from "framer-motion";
 import { MapPin, Phone, Mail, Clock, MessageSquare, Users, Building, Globe } from "lucide-react";
 import { useState } from "react";
+import Link from "next/link";
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -65,12 +66,12 @@ export default function ContactPage() {
                   Enviar Otro Mensaje
                 </button>
 
-                <a
+                <Link
                   href="/"
                   className="px-6 py-3 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 transition-all duration-300"
                 >
                   Volver al Inicio
-                </a>
+                </Link>
               </div>
             </div>
           </motion.div>

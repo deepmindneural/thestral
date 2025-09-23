@@ -4,7 +4,13 @@
       "WebFetch(domain:www.palantir.com)",
       "WebSearch",
       "Bash(npm run dev:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git branch:*)",
+      "Bash(git push:*)",
+      "Read(//Volumes/StarkT7/proyectos/MIO/**)",
+      "Bash(rg:*)",
+      "Bash(curl:*)",
+      "Bash(cd:*)"
     ],
     "deny": [],
     "ask": []

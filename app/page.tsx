@@ -32,15 +32,36 @@ export default function Home() {
           {/* Partículas animadas */}
           <div className="absolute inset-0">
             <div className="particles-container">
-              {[...Array(20)].map((_, i) => (
+              {[
+                { left: 18.7, top: 66.6, delay: 2.4, duration: 4.9 },
+                { left: 48.8, top: 19.1, delay: 2.1, duration: 3.3 },
+                { left: 3.9, top: 42.5, delay: 0.2, duration: 4.1 },
+                { left: 30.1, top: 88.3, delay: 0.6, duration: 4.6 },
+                { left: 54.3, top: 52.9, delay: 2.5, duration: 3.0 },
+                { left: 80.1, top: 83.2, delay: 2.7, duration: 3.7 },
+                { left: 62.8, top: 92.2, delay: 1.0, duration: 4.3 },
+                { left: 4.1, top: 67.8, delay: 1.2, duration: 3.2 },
+                { left: 49.9, top: 90.3, delay: 2.9, duration: 3.9 },
+                { left: 2.4, top: 27.6, delay: 0.8, duration: 3.7 },
+                { left: 14.3, top: 0.7, delay: 0.3, duration: 3.1 },
+                { left: 96.1, top: 48.3, delay: 2.6, duration: 3.6 },
+                { left: 45.0, top: 34.0, delay: 2.5, duration: 3.0 },
+                { left: 40.3, top: 12.7, delay: 2.1, duration: 3.0 },
+                { left: 19.8, top: 1.9, delay: 0.8, duration: 3.8 },
+                { left: 28.7, top: 46.3, delay: 0.6, duration: 4.6 },
+                { left: 74.9, top: 99.8, delay: 1.6, duration: 4.3 },
+                { left: 37.9, top: 91.8, delay: 1.7, duration: 3.8 },
+                { left: 64.7, top: 18.0, delay: 0.8, duration: 4.2 },
+                { left: 70.6, top: 92.4, delay: 1.4, duration: 4.2 }
+              ].map((particle, i) => (
                 <div
                   key={i}
                   className="particle absolute w-1 h-1 bg-blue-400 rounded-full animate-pulse"
                   style={{
-                    left: `${Math.random() * 100}%`,
-                    top: `${Math.random() * 100}%`,
-                    animationDelay: `${Math.random() * 3}s`,
-                    animationDuration: `${3 + Math.random() * 2}s`
+                    left: `${particle.left}%`,
+                    top: `${particle.top}%`,
+                    animationDelay: `${particle.delay}s`,
+                    animationDuration: `${particle.duration}s`
                   }}
                 />
               ))}
